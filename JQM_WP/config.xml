@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
-        version   = "1.0.0">
+        id        = "com.phonegap.wp"
+        version   = "1.0">
 
-    <name>JQM_WP</name>
+    <name>NawetannLive</name>
 
     <description>
-        JQM_WP sample application that responds to the deviceready event.
+       NawetannLive une app sportive pour vivre les natwetaan en directs au Sénégal et partout dans le monde
     </description>
 
     <author href="http://senmobile.com" email="senmobile@senmobile.com">
