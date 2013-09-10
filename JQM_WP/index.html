@@ -28,7 +28,7 @@
 <script type="text/javascript"> 
 			 $(document).ready(function () {
       
-  			$('#myrssfeedscore').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrss.xml', {
+  			$('#myrssfeedscore0').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrss.xml', {
  			   limit: 100
  				 });
 				 
@@ -40,30 +40,71 @@
 </head>
 <body>
 
-<div data-role="page" id="page1" class="type-interior" data-theme="a" data-position="fixed">
-<div data-role="header" data-theme="a">
-    <span class="ui-app-title">NawetaanLine</span>
-    <h6></h6>
-</div><!-- /header -->
-   
-<div data-role="content" data-theme="a">
-   <div class="content-primary" align="center">
+<div data-role="page" id="page0" class="type-interior" data-theme="a" data-position="fixed">
+			<div id="myrssfeedscore0" >
+            
+				<div class = "rssHeader"> </div>
+            
+                        <ul > 
+                          <li class = "rssBody"></li>
+                        </ul>
      
-	<fieldset data-role="fieldcontain" >
-		<a href="#page3"  id="dakar"><h4>Dakar<h4></a>
-		</br>
-		<a href="#page2"  id="Thies"><h4>Thies<h4></a>
-		</br>
-		<a href="#"  id="sms"><h4>SMS<h4></a>
-		</br>
-		<a href="#"  id="apropos"><h4>A Propos<h4></a>
-	</fieldset>
-     </div>
+            </div> 
+			
 
-	<div data-role="footer">
-			<p>Powered by SenMobile</p>
-    </div>
-</div>
+			
+<!-- Code CSS du logo de l'entete-->
+		    <style type="text/css">
+			.ctitre{
+ 			   display: inline-block;
+			   	}
+			.logoposition{
+  		 	   float:left;
+				}
+                
+            .news{
+  		 	   margin-bottom:30px;
+				}  
+             
+            .footer{
+                text-align: center; 
+            }
+            
+                
+            #myrssfeedscore0 .rssBody ul li{
+    
+            
+            font-size:12px;
+            list-style-type: none;
+            margin-left : -35px;
+            background-image : url(img/bal.png);
+            background-repeat : no-repeat;
+	        background-position : left 10px;
+                                                                           
+            padding-left :26px;
+            border-bottom-style : solid;
+            border-bottom-color : gray;    
+           
+           }
+           
+           #myrssfeedscore0 .rssHeader {
+           
+            display:none ;
+			font-size:8px;
+                
+           
+           }
+           
+           
+           
+           .messagescore {
+           
+             text-color : yellow;
+                
+           
+           }
+        
+		    </style>
 </div> <!---- fin div page 1 --->
 
 <div data-role="page" id="page2" class="type-interior" data-theme="a" data-position="fixed">
