@@ -9,7 +9,7 @@
     <name>JQM_WP</name>
 
     <description>
-        JQM_WP sample application that responds to the deviceready e_ent.
+        JQM_WP sample application that responds to the deviceready event.
     </description>
 
     <author href="http://senmobile.com" email="senmobile@senmobile.com">
