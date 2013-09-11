@@ -1,201 +1,204 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>JQM for WP - Demo</title>
-    <link rel="stylesheet" href="css/metro/jquery.mobile.metro.theme.css"/>
-    <link href="css/progress-bar.css" rel="stylesheet" type="text/css" />
-    <link href="css/jquery.zrssfeed.css" rel="stylesheet" type="text/css">
-	
- 
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/jquery.mobile.js" type="text/javascript"></script>
-    <script src="css/metro/jquery.mobile.metro.theme.init.js" type="text/javascript"></script>
-    <script src="js/jquery.globalstylesheet.js" type="text/javascript"></script>
-    <script src="js/jquery.mobile.themeswitcher.js" type="text/javascript"></script>
-    <script src="js/progress-bar.js" type="text/javascript"></script>
-    <script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
-    <style type="text/css">
-      A:link { text-decoration: none ;}
-	  A:text { text-line:center;}
-    </style>
-	
-    
-       
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>JQM for WP - Demo</title>
+		<link rel="stylesheet" href="css/metro/jquery.mobile.metro.theme.css"/>
+		<link href="css/progress-bar.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.zrssfeed.css" rel="stylesheet" type="text/css">
+		
+	 
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile.js" type="text/javascript"></script>
+		<script src="css/metro/jquery.mobile.metro.theme.init.js" type="text/javascript"></script>
+		<script src="js/jquery.globalstylesheet.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile.themeswitcher.js" type="text/javascript"></script>
+		<script src="js/progress-bar.js" type="text/javascript"></script>
+		<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+		<style type="text/css">
+		  A:link { text-decoration: none ;}
+		  A:text { text-line:center;}
+		</style>
+		
+		
+		   
 
-<script type="text/javascript"> 
-			 $(document).ready(function () {
-      
-  			$('#myrssfeedscore').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrss.xml', {
- 			   limit: 100
- 				 });
+	<script type="text/javascript"> 
+				 $(document).ready(function () {
+		  
+				$('#myrssfeedscore').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrss.xml', {
+				   limit: 100
+					 });
+					 
+				$('#myrssfeedscore1').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrssdakar.xml', {
+				   limit: 100
+					 });
+				});     
+	 </script>  
+	</head>
+	<body>
+
+	<div data-role="page" id="page1" >
+	<div data-role="header" data-theme="a">
+		<span class="ui-app-title">NawetaanLine</span>
+		<h6></h6>
+	</div><!-- /header -->
+	   
+	<div data-role="content" data-theme="a">
+		 
+		<fieldset data-role="fieldcontain" >
+			<a href="#page3"  id="dakar"><h4>Dakar<h4></a>
+			</br>
+			<a href="#page2"  id="Thies"><h4>Thies<h4></a>
+			</br>
+			<a href="#"  id="sms"><h4>SMS<h4></a>
+			</br>
+			<a href="#"  id="apropos"><h4>A Propos<h4></a>
+		</fieldset>
+	</div>
+		<div data-role="footer">
+				<p>Powered by SenMobile</p>
+		</div>
+
+	</div> <!---- fin div page 1 --->
+
+	<div data-role="page" id="page2" >
+		<div data-role="content" id="myrssfeedscore" data-theme="a">
+			
+					<div class = "rssHeader"> </div>
+				
+							<ul > 
+							  <li class = "rssBody"></li>
+							</ul>
+		 
+				
+				
+		</div> 
+				
+	<!-- Code CSS du logo de l'entete-->
+				<style type="text/css">
+				.ctitre{
+				   display: inline-block;
+					}
+				.logoposition{
+				   float:left;
+					}
+					
+				.news{
+				   margin-bottom:30px;
+					}  
 				 
-			$('#myrssfeedscore1').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrssdakar.xml', {
- 			   limit: 100
- 				 });
-		    });     
- </script>  
-</head>
-<body>
-
-<div data-role="page" id="page1" >
-<div data-role="header" data-theme="a">
-    <span class="ui-app-title">NawetaanLine</span>
-    <h6></h6>
-</div><!-- /header -->
-   
-<div data-role="content" data-theme="a">
-     
-	<fieldset data-role="fieldcontain" >
-		<a href="#page3"  id="dakar"><h4>Dakar<h4></a>
-		</br>
-		<a href="#page2"  id="Thies"><h4>Thies<h4></a>
-		</br>
-		<a href="#"  id="sms"><h4>SMS<h4></a>
-		</br>
-		<a href="#"  id="apropos"><h4>A Propos<h4></a>
-	</fieldset>
-</div>
-	<div data-role="footer">
-			<p>Powered by SenMobile</p>
-    </div>
-
-</div> <!---- fin div page 1 --->
-
-<div data-role="page" id="page2" >
-			<div id="myrssfeedscore" >
-            
-				<div class = "rssHeader"> </div>
-            
-                        <ul > 
-                          <li class = "rssBody"></li>
-                        </ul>
-     
-            </div> 
-			
-	
-			
-<!-- Code CSS du logo de l'entete-->
-		    <style type="text/css">
-			.ctitre{
- 			   display: inline-block;
-			   	}
-			.logoposition{
-  		 	   float:left;
+				.footer{
+					text-align: center; 
 				}
-                
-            .news{
-  		 	   margin-bottom:30px;
-				}  
-             
-            .footer{
-                text-align: center; 
-            }
-            
-                
-            #myrssfeedscore .rssBody ul li{
-    
-            
-            font-size:12px;
-            list-style-type: none;
-            margin-left : -35px;
-            background-image : url(img/bal.png);
-            background-repeat : no-repeat;
-	        background-position : left 10px;
-                                                                           
-            padding-left :26px;
-            border-bottom-style : solid;
-            border-bottom-color : gray;    
-           
-           }
-           
-           #myrssfeedscore .rssHeader {
-           
-            display:none ;
-			font-size:8px;
-                
-           
-           }
-           
-           
-           
-           .messagescore {
-           
-             text-color : yellow;
-                
-           
-           }
-        
-		    </style>
-</div>
-
-<div data-role="page" id="page3" >
-			<div id="myrssfeedscore1" >
-            
-				<div class = "rssHeader"> </div>
-            
-                        <ul > 
-                          <li class = "rssBody"></li>
-                        </ul>
-     
-            </div> 
+				
+					
+				#myrssfeedscore .rssBody ul li{
+		
+				
+				font-size:12px;
+				list-style-type: none;
+				margin-left : -35px;
+				background-image : url(img/bal.png);
+				background-repeat : no-repeat;
+				background-position : left 10px;
+																			   
+				padding-left :26px;
+				border-bottom-style : solid;
+				border-bottom-color : gray;    
+			   
+			   }
+			   
+			   #myrssfeedscore .rssHeader {
+			   
+				display:none ;
+				font-size:8px;
+					
+			   
+			   }
+			   
+			   
+			   
+			   .messagescore {
+			   
+				 text-color : yellow;
+					
+			   
+			   }
 			
+				</style>
+	</div>
 
-			
-<!-- Code CSS du logo de l'entete-->
-		    <style type="text/css">
-			.ctitre{
- 			   display: inline-block;
-			   	}
-			.logoposition{
-  		 	   float:left;
+	<div data-role="page" id="page3" >
+
+	    <div data-role="content" id="myrssfeedscore1" data-theme="a">
+
+				
+				
+					<div class = "rssHeader"> </div>
+				
+							<ul > 
+							  <li class = "rssBody"></li>
+							</ul>
+		 
+	    </div> 
+				
+
+				
+	<!-- Code CSS du logo de l'entete-->
+				<style type="text/css">
+				.ctitre{
+				   display: inline-block;
+					}
+				.logoposition{
+				   float:left;
+					}
+					
+				.news{
+				   margin-bottom:30px;
+					}  
+				 
+				.footer{
+					text-align: center; 
 				}
-                
-            .news{
-  		 	   margin-bottom:30px;
-				}  
-             
-            .footer{
-                text-align: center; 
-            }
-            
-                
-            #myrssfeedscore .rssBody ul li{
-    
-            
-            font-size:12px;
-            list-style-type: none;
-            margin-left : -35px;
-            background-image : url(img/bal.png);
-            background-repeat : no-repeat;
-	        background-position : left 10px;
-                                                                           
-            padding-left :26px;
-            border-bottom-style : solid;
-            border-bottom-color : gray;    
-           
-           }
-           
-           #myrssfeedscore .rssHeader {
-           
-            display:none ;
-			font-size:8px;
-                
-           
-           }
-           
-           
-           
-           .messagescore {
-           
-             text-color : yellow;
-                
-           
-           }
-        
-		    </style>
-</div>
+				
+					
+				#myrssfeedscore .rssBody ul li{
+		
+				
+				font-size:12px;
+				list-style-type: none;
+				margin-left : -35px;
+				background-image : url(img/bal.png);
+				background-repeat : no-repeat;
+				background-position : left 10px;
+																			   
+				padding-left :26px;
+				border-bottom-style : solid;
+				border-bottom-color : gray;    
+			   
+			   }
+			   
+			   #myrssfeedscore .rssHeader {
+			   
+				display:none ;
+				font-size:8px;
+					
+			   
+			   }
+			   
+			   
+			   
+			   .messagescore {
+			   
+				 text-color : yellow;
+					
+			   
+			   }
+			
+				</style>
+	</div>
 
-</body>
-</html>
+	</body>
+	</html>
