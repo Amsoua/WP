@@ -6,10 +6,10 @@
         id        = "com.phonegap.wp"
         version   = "1.0">
 
-    <name>NawetannLive</name>
+    <name>NawetaanLive</name>
 
     <description>
-       NawetannLive une app sportive pour vivre les natwetaan en directs au Sénégal et partout dans le monde
+       NawetaanLive une app sportive pour vivre les natwetaan en directs au Sénégal et partout dans le monde
     </description>
 
     <author href="http://senmobile.com" email="senmobile@senmobile.com">
@@ -66,7 +66,7 @@
     <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" /> -->
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
-    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+    <icon src="res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone"   gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
     <!--<gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
