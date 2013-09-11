@@ -8,9 +8,7 @@
 		<link href="css/progress-bar.css" rel="stylesheet" type="text/css" />
 		<link href="css/jquery.zrssfeed.css" rel="stylesheet" type="text/css">
 		
-	     
-		<script src="cordova.js" type="text/javascript"></script>
-		<script src="phonegap.js" type="text/javascript"></script>
+	 
 		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="js/jquery.mobile.js" type="text/javascript"></script>
 		<script src="css/metro/jquery.mobile.metro.theme.init.js" type="text/javascript"></script>
@@ -21,8 +19,6 @@
 		<style type="text/css">
 		  A:link { text-decoration: none ;}
 		  A:text { text-line:center;}
-		  
-		  p{ color:red;}
 		</style>
 		
 		
@@ -52,13 +48,13 @@
 	<div data-role="content" data-theme="a">
 		 
 		<fieldset data-role="fieldcontain" >
-			<a href="Thies.html" ><h4>Dakar<h4></a>
+			<a href="#page3"  id="dakar"><h4>Dakar<h4></a>
 			</br>
-			<a href="#"  id="Thies"><h4>Thies<h4></a>
+			<a href="#page2"  id="Thies"><h4>Thies<h4></a>
 			</br>
 			<a href="#"  id="sms"><h4>SMS<h4></a>
 			</br>
-		
+			<a href="#"  id="apropos"><h4>A Propos<h4></a>
 		</fieldset>
 	</div>
 		<div data-role="footer">
@@ -67,7 +63,142 @@
 
 	</div> <!---- fin div page 1 --->
 
-	
+	<div data-role="page" id="page2" >
+		<div data-role="content" id="myrssfeedscore" data-theme="a">
+			
+					<div class = "rssHeader"> </div>
+				
+							<ul > 
+							  <li class = "rssBody"></li>
+							</ul>
+		 
+				
+				
+		</div> 
+				
+	<!-- Code CSS du logo de l'entete-->
+				<style type="text/css">
+				.ctitre{
+				   display: inline-block;
+					}
+				.logoposition{
+				   float:left;
+					}
+					
+				.news{
+				   margin-bottom:30px;
+					}  
+				 
+				.footer{
+					text-align: center; 
+				}
+				
+					
+				#myrssfeedscore .rssBody ul li{
+		
+				
+				font-size:12px;
+				list-style-type: none;
+				margin-left : -35px;
+				background-image : url(img/bal.png);
+				background-repeat : no-repeat;
+				background-position : left 10px;
+																			   
+				padding-left :26px;
+				border-bottom-style : solid;
+				border-bottom-color : gray;    
+			   
+			   }
+			   
+			   #myrssfeedscore .rssHeader {
+			   
+				display:none ;
+				font-size:8px;
+					
+			   
+			   }
+			   
+			   
+			   
+			   .messagescore {
+			   
+				 text-color : yellow;
+					
+			   
+			   }
+			
+				</style>
+	</div>
+
+	<div data-role="page" id="page3" >
+
+	    <div data-role="content" id="myrssfeedscore1" data-theme="a">
+
+				
+				
+					<div class = "rssHeader"> </div>
+				
+							<ul > 
+							  <li class = "rssBody"></li>
+							</ul>
+		 
+	    </div> 
+				
+
+				
+	<!-- Code CSS du logo de l'entete-->
+				<style type="text/css">
+				.ctitre{
+				   display: inline-block;
+					}
+				.logoposition{
+				   float:left;
+					}
+					
+				.news{
+				   margin-bottom:30px;
+					}  
+				 
+				.footer{
+					text-align: center; 
+				}
+				
+					
+				#myrssfeedscore .rssBody ul li{
+		
+				
+				font-size:12px;
+				list-style-type: none;
+				margin-left : -35px;
+				background-image : url(img/bal.png);
+				background-repeat : no-repeat;
+				background-position : left 10px;
+																			   
+				padding-left :26px;
+				border-bottom-style : solid;
+				border-bottom-color : gray;    
+			   
+			   }
+			   
+			   #myrssfeedscore .rssHeader {
+			   
+				display:none ;
+				font-size:8px;
+					
+			   
+			   }
+			   
+			   
+			   
+			   .messagescore {
+			   
+				 text-color : yellow;
+					
+			   
+			   }
+			
+				</style>
+	</div>
 
 	</body>
 	</html>
