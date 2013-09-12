@@ -19,6 +19,38 @@
     <style type="text/css">
       A:link { text-decoration: none ;}
 	  A:text { text-line:center;}
+	  
+	   #rssfeedthies .rssBody ul li
+		{
+			
+			list-style-type: none;
+			margin-left : -35px;                                                         
+			padding-left :-10px;
+			border-bottom-style : solid;
+			border-bottom-color : gray;    
+        }
+           
+       #rssfeedthies .rssHeader1 
+		{
+			display:none ;
+			font-size:8px;
+        }
+		
+	   .footer{text-align: center; }
+			
+       #rssfeeddakar .rssBody ul li
+		{
+			
+			margin-left : -35px;    
+			list-style-type: none;
+			border-bottom-style : solid;
+			border-bottom-color : gray;    
+        }
+       #rssfeeddakar .rssHeader 
+		{
+			display:none ;
+			font-size:8px;
+        }
     </style>
 	
 	<script type="text/javascript" src="rssFeed/rssFeed.js"></script> 
@@ -65,177 +97,71 @@
 
 </div> <!---- fin div page 1 --->
 
-<div data-role="page" id="thies" >
-			<div data-role="header" data-theme="a">
-				<span class="ui-app-title">scores de thiès</span>
-				<h1></h1>
-			</div><!-- /header -->
-   
-			<div data-role="content" id="rssfeedthies" data-theme="a">
-		
-            
-				<div class = "rssHeader"> </div>
-            
-                        <ul > 
-                          <li class = "rssBody"></li>
-                        </ul>
-     
-            </div> 
-			
-	<div data-role="footer" data-position="fixed"  class = "footer"> <p>&copy; SenMobile 2013</p></div>
-			
-<!-- Code CSS du logo de l'entete-->
-		    <style type="text/css">
-			.ctitre{
- 			   display: inline-block;
-			   	}
-			.logoposition{
-  		 	   float:left;
-				}
+<div data-role="page" id="thies">
+
+	<div data-role="header" data-theme="a">
+	
+		<span class="ui-app-title">scores de thiès</span>
 				
+	</div><!-- /header -->
+   
+	<div data-role="content" id="rssfeedthies" data-theme="a">
+
+		<div class = "rssHeader1"></div>
             
+        <ul><li class = "rssBody"></li></ul>
+     
+    </div> <!-- /content -->
 			
-            .news{
-  		 	   margin-bottom:30px;
-				}  
-             
-            .footer{
-                text-align: center; 
-            }
-            
-                
-            #rssfeedthies .rssBody ul li{
-    
-            
-            font-size:12px;
-            list-style-type: none;
-            margin-left : -20px;
-            background-image : url(img/bal.png);
-            background-repeat : no-repeat;
-	        background-position : left 10px;
-                                                                           
-            padding-left :26px;
-            border-bottom-style : solid;
-            border-bottom-color : gray;    
-           
-           }
-           
-           #rssfeedthies .rssHeader {
-           
-            display:none ;
-			font-size:8px;
-                
-           
-           }
-           
-           
-           
-           .messagescore {
-           
-             text-color : yellow;
-                
-           
-           }
-        
-		    </style>
+	<div data-role="footer" data-position="fixed"  class = "footer"> <p>&copy; SenMobile 2013</p></div><!-- /footer -->
+			
 </div>
 
-<div data-role="page" id="dakar" >
-			<div data-role="header" data-theme="a">
-				<span class="ui-app-title">scores de Dakar</span>
-				<h1></h1>
-			</div><!-- /header -->
-   
-			<div data-role="content" id="rssfeeddakar" data-theme="a">
-				<div >
-				</div>
-				<div class = "rssHeader"> </div>
-            
-                        <ul > 
-                          <li class = "rssBody"></li>
-                        </ul>
-     
-            </div> 
-			
+<div data-role="page" id="dakar">
 
-		<div data-role="footer" data-position="fixed"  class = "footer"> <p>&copy; SenMobile 2013</p></div>	
-<!-- Code CSS du logo de l'entete-->
-		    <style type="text/css">
-			.ctitre{
- 			   display: inline-block;
-			   	}
-			.logoposition{
-  		 	   float:left;
-				}
-                
-            .news{
-  		 	   margin-bottom:30px;
-				}  
-             
-            .footer{
-                text-align: center; 
-            }
+	<div data-role="header" data-theme="a">
+	
+		<span class="ui-app-title">scores de Dakar</span>
+		
+	</div><!-- /header -->
+   
+	<div data-role="content" id="rssfeeddakar" data-theme="a">
+				
+		<div class = "rssHeader"></div>
             
-                
-            #rssfeeddakar .rssBody ul li{
-    
-            
-            font-size:12px;
-            list-style-type: none;
-            margin-left : -20px;
-            background-image : url(img/bal.png);
-            background-repeat : no-repeat;
-	        background-position : left 10px;
-                                                                           
-            padding-left :26px;
-            border-bottom-style : solid;
-            border-bottom-color : gray;    
-           
-           }
-           
-           #rssfeeddakar .rssHeader {
-           
-            display:none ;
-			font-size:8px;
-                
-           
-           }
-           
-           
-           
-           .messagescore {
-           
-             text-color : yellow;
-                
-           
-           }
-        
-		    </style>
+            <ul><li class = "rssBody"></li></ul>
+     
+    </div> <!-- /content -->
+			
+	<div data-role="footer" data-position="fixed"  class = "footer"> <p>&copy; SenMobile 2013</p></div>	<!-- /footer -->
+	
 </div>
 
 <div data-role="page" id="apropos" >
-			<div data-role="header" data-theme="a">
-				<span class="ui-app-title">A Propos</span>
-				<h1></h1>
-			</div><!-- /header -->
+
+	<div data-role="header" data-theme="a">
+	
+		<span class="ui-app-title">A Propos</span>
+			
+	</div><!-- /header -->
    
-			<div data-role="content"  data-theme="a">
+	<div data-role="content"  data-theme="a">
 		
+		<div class = "rssHeader"></div>
             
-				<div class = "rssHeader"> </div>
-            
-                        <p > 
-							NawetaanLive v 1.0
-							vive le foot local au Se'ne'gal
-							re'sultats en live des Nawetaans de Thie`s et Dakar 
-							http://nawetaanlive.com
-							http://facebook.com/nawetaanlive
-							Copyright SenMobile 2011-2015
-                        </p>
+             <p> 
+				NawetaanLive v 1.0 </br>
+				vive le foot local au Sénégal </br>
+				résultats en live des Nawetaans de Thiès et Dakar </br>
+				http://nawetaanlive.com</br>
+				http://facebook.com/nawetaanlive</br>
+				Copyright SenMobile 2011-2015
+             </p>
      
-            </div> 
+        </div> 
 			
 	<div data-role="footer" data-position="fixed"  class = "footer"> <p>&copy; SenMobile 2013</p></div>
+	
 </div>			
 
 </body>
