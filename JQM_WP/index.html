@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no""/>
     <title>NawetaanLiveWP</title>
     <link rel="stylesheet" href="css/metro/jquery.mobile.metro.theme.css"/>
     <link href="css/progress-bar.css" rel="stylesheet" type="text/css" />
@@ -107,9 +107,10 @@
 				 
 			$('#vote #monvote').click(function(){
 
-             $.jqDialog.notify("Le prix du SMS est de 250 frs CFA",3); 
+            $.jqDialog.notify("Le prix du SMS est de 250 frs CFA",3); 
 
 				});
+		    $("#vote a").attr("href","sms:2422?body=test");
 		    });     
  </script>  
 </head>
@@ -214,7 +215,7 @@
                      <input type="text" name="nom" id="nom" required/>
                   </p></br>
 
-                  <a href="sms:22422?body=test"><input type="submit" value="Votez" id="monvote"/></a>
+                  <a><input type="submit" value="Votez" id="monvote"/></a>
 
                 </form>
               </div> <!-- fin fieldcontain -->
