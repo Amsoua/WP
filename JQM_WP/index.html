@@ -89,7 +89,6 @@
         h4 span{font-weight: bold;}
 
         :required{ background-color: red};
-		
     }
     </style>
 	
@@ -113,7 +112,6 @@
             $.jqDialog.notify("Le prix du SMS est de 250 frs CFA",3); 
 
 				});
-		    $("#vote a").attr("href","sms://2422?body=test");
 		    });     
  </script>  
 </head>
@@ -219,7 +217,7 @@
                      <input type="text" name="nom" id="nom" required/>
                   </p></br>
 
-                  <a href="tel:+1800000000"><input type="submit" value="Votez" id="monvote"/></a>
+                  <a href="sms:24222?body=test"><input type="submit" value="Votez" id="monvote"/></a>
 
                 </form>
               </div> <!-- fin fieldcontain -->
