@@ -54,6 +54,7 @@
 			list-style-type: none;
 			border-bottom-style : solid;
 			font-family: Segoe WP, Segoe UI Light, Helvetica, san-serif;
+			
 			   
         }
        #rssfeeddakar .rssHeader 
@@ -89,13 +90,6 @@
 
         :required{ background-color: red};
 		
-		body
-		{
-           background-image:url(img/nawetaanlive.png) no-repeat;
-		   width: auto;
-		   margin: 0;
-		   padding: 0;
-		}
     }
     </style>
 	
@@ -151,14 +145,14 @@
 
 </div> <!---- fin div page 1 --->
 
-<div data-role="page" id="thies" class ="ui-page">
+<div data-role="page" id="thies" class="body1">
 
 	<div data-role="header" data-theme="a">
 		<span class="ui-app-title"></span>		
         <h1><img src= "img/icon-48.png">Scores de Thiès</h1>		
 	</div><!-- /header -->
    
-	<div data-role="content" id="rssfeedthies" data-theme="a">
+	<div data-role="content" id="rssfeedthies" data-theme="a" >
 
 		<div class = "rssHeader"></div>
             
@@ -225,7 +219,7 @@
                      <input type="text" name="nom" id="nom" required/>
                   </p></br>
 
-                  <a><input type="submit" value="Votez" id="monvote"/></a>
+                  <a href="tel:+1800000000"><input type="submit" value="Votez" id="monvote"/></a>
 
                 </form>
               </div> <!-- fin fieldcontain -->
