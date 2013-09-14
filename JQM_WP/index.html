@@ -89,6 +89,28 @@
         h4 span{font-weight: bold;}
 
         :required{ background-color: red};
+		
+		#equipe{margin-bottom : 20px;}
+		
+		
+		body {
+		   width: auto;
+		   margin: 0;
+		   padding: 0;
+		 }
+
+		 /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */
+		 img,input{
+		   max-width: 100%;
+		 }
+		/* conserver le ratio des images et empêcher les débordements de boîtes dûs aux border ou padding */
+		 img {
+		   height: auto; width: auto;
+		   -webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		   box-sizing: border-box;
+		 }
+
     }
     </style>
 	
@@ -153,8 +175,6 @@
 	</div><!-- /header -->
     <div data-role="fieldcontain">
 	<div data-role="content" id="rssfeedthies" data-theme="a" >
-
-		<div class = "rssHeader"></div>
             
 			<ul><li class = "rssBody"></li></ul>
      
@@ -172,8 +192,6 @@
 	</div><!-- /header -->
     <div data-role="fieldcontain">
 	<div data-role="content" id="rssfeeddakar" data-theme="a">
-				
-		<div class = "rssHeader"></div>
             
             <ul><li class = "rssBody"></li></ul>
 	 
@@ -265,8 +283,6 @@
    
 	<div data-role="content"  data-theme="a">
 		<div data-role="fieldcontain">
-		<div class = "rssHeader"></div>
-            
              <p> 
 				NawetaanLive v 1.0 </br></br>
 				Vive le foot local au Sénégal</br></br>
