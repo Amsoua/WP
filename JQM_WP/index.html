@@ -90,11 +90,9 @@
 
         :required{ background-color: red};
 		
-		#equipe{margin-bottom : 20px;}
+		#equipe h1{height: 60px;}
+		#apropos h1{height: 60px;}
 		
-		
-
-    }
     </style>
 	
 	
@@ -122,154 +120,149 @@
 <body >
 
 <div data-role="page" id="page1">
-<div data-role="header" data-theme="a">
-    <span class="ui-app-title1"><img src= "img/nawetaanlive_winp.png"></span>
-    <h1>Vive le foot local live</h1>
-</div><!-- /header -->
+		<div data-role="header" data-theme="a">
+			<span class="ui-app-title1"><img src= "img/nawetaanlive_winp.png"/></span>
+			<h1>Vive le foot local live</h1>
+		</div><!-- /header -->
    
-<div data-role="content" data-theme="a">
-   <div class="content-primary" align="center">
-     
-	<fieldset data-role="fieldcontain" >
-			<a href="#dakar"  id="dakar"><h3><span>d</span>akar<h3></a>
-      		</br>
-      		<a href="#thies"  id="Thies"><h3><span>t</span>hiès<h3></a>
-      		</br>
-      		<a href="#joueur"  id="sms"><h3><span>j</span>oueur favori<h3></a>
-      		</br>
-			<a href="#equipe"  id="sms"><h3><span>é</span>quipe favorite<h3></a>
-      		</br>
-      		<a href="#apropos"  id="apropos"><h3><span>a</span> propos<h3></a>
-	</fieldset>
-     </div>
+		<div data-role="content" data-theme="a">
+		   <div class="content-primary" align="center">
+			 
+				<fieldset data-role="fieldcontain" >
+					<a href="#dakar"  id="dakar"><h3><span>d</span>akar<h3></a>
+					</br>
+					<a href="#thies"  id="Thies"><h3><span>t</span>hiès<h3></a>
+					</br>
+					<a href="#joueur"  id="sms"><h3><span>j</span>oueur favori<h3></a>
+					</br>
+					<a href="#equipe"  id="sms"><h3><span>é</span>quipe favorite<h3></a>
+					</br>
+					<a href="#apropos"  id="apropos"><h3><span>a</span> propos<h3></a>
+				</fieldset>
+			 </div>
 
- </div>
+		 </div>
 
 </div> <!---- fin div page 1 --->
 
-<div data-role="page" id="thies" data-position="fixed">
+<div data-role="page" id="thies"> <!-- /rss thies -->
 
-	<div data-role="header" data-theme="a" data-position="fixed">
-		<span class="ui-app-title"></span>		
-        <h1><img src= "img/icon-48.png">Scores de Thiès</h1>		
-	</div><!-- /header -->
-		<div data-role="fieldcontain">
-		<div data-role="content" id="rssfeedthies" data-theme="a" data-position="fixed" >
-				
+		<div data-role="header" data-theme="a">
+			<span class="ui-app-title"></span>		
+			<h1><img src= "img/icon-48.png"/>Scores de Thiès</h1>		
+		</div><!-- /header -->
+		
+		<div data-role="content" id="rssfeedthies" data-theme="a">
+			<div data-role="fieldcontain">
 				<ul><li class = "rssBody"></li></ul>
-		 
-		</div> <!-- /content -->
-	</div> 	
+			</div> <!-- /content -->
+		</div> 	
 			
 </div>
 
-<div data-role="page" id="dakar" data-position="fixed">
+<div data-role="page" id="dakar">  <!-- /rss dakar -->
 
-	<div data-role="header" data-theme="a" data-position="fixed">
-		<span class="ui-app-title"></span>
-		<h1><img src= "img/icon-48.png">Scores de Dakar</h1>
-	</div><!-- /header -->
-    <div data-role="fieldcontain">
-	<div data-role="content" id="rssfeeddakar" data-theme="a" data-position="fixed">
-            
-            <ul><li class = "rssBody"></li></ul>
-	 
-    </div> <!-- /content -->
-	</div> 		
-	
-	
+		<div data-role="header" data-theme="a" >
+			<span class="ui-app-title"></span>
+			<h1><img src= "img/icon-48.png"/>Scores de Dakar</h1>
+		</div><!-- /header -->
+		
+		<div data-role="content" id="rssfeeddakar" data-theme="a" >
+			<div data-role="fieldcontain">
+				<ul><li class = "rssBody"></li></ul>
+			</div> <!-- /content -->
+		</div> 		
 </div>
 
 <!-- SMS -->
 
 <div data-role="page" id="joueur">
 
-  <div data-role="header" data-theme="a">
-    <span class="ui-app-title"></span>
-    <h1><img src= "img/icon-48.png">Joueur Favori</h1>
-  </div><!-- /header -->
+		<div data-role="header" data-theme="a">
+			<span class="ui-app-title"></span>
+			<h1><img src= "img/icon-48.png"/>Joueur Favori</h1>
+		</div><!-- /header -->
    
-  <div data-role="content" id="vote" data-theme="a">
-      
+		  <div data-role="content" id="vote" data-theme="a">
+			  
 
-              <div data-role="fieldcontain">
-                <form method="post" action="">
-				<h3>Votez pour votre joueur favori</h3>
-                  <p>
-                    <label for="ville">Ville : </label>
-                    <select name="ville" id="ville">
-                      <option value="pikine">Pikine</option>
-                      <option value="thies">Thiès</option>
-                    </select>
-                  </p>
+			  <div data-role="fieldcontain">
+				<form method="post" action="">
+					<h3>Votez pour votre joueur favori</h3>
+					  <p>
+						<label for="ville">Ville : </label>
+						<select name="ville" id="ville">
+						  <option value="pikine">Pikine</option>
+						  <option value="thies">Thiès</option>
+						</select>
+					  </p>
 
-                  <p>
-                     <label for="prenom">Prénom : </label>
-                     <input type="text" name="prenom" id="prenom" required/>
-                  </p>
+					  <p>
+						 <label for="prenom">Prénom : </label>
+						 <input type="text" name="prenom" id="prenom" required/>
+					  </p>
 
-                  <p>
-                     <label for="nom">Nom : </label>
-                     <input type="text" name="nom" id="nom" required/>
-                  </p>
+					  <p>
+						 <label for="nom">Nom : </label>
+						 <input type="text" name="nom" id="nom" required/>
+					  </p>
 
-                  <a href="#"><input type="submit" value="Votez" id="monvote"/></a>
+					<a href="#"><input type="submit" value="Votez" id="monvote"/></a>
 
-                </form>
-              </div> <!-- fin fieldcontain -->
+				</form>
+			  </div> <!-- fin fieldcontain -->
+		 </div>
  </div>
- </div>
- <div data-role="page" id="equipe" >
+ 
+ <div data-role="page" id="equipe" > <!-- /page equipe favorite -->
 
-  <div data-role="header" data-theme="a">
-    <span class="ui-app-title"></span>
-    <h1><img src= "img/icon-48.png">Equipe favorite</h1>
-  </div><!-- /header -->    
-  <div data-role="content" id="vote" data-theme="a">  
+		<div data-role="header" data-theme="a">
+			<span class="ui-app-title"></span>
+			<h1><img src= "img/icon-48.png"/>Equipe favorite</h1>
+		</div><!-- /header -->    
+	  
+		<div data-role="content" id="vote" data-theme="a">  
               <div data-role="fieldcontain">
-                <form method="post" action="">
-                  <h3>Votez pour votre équipe favorite</h3>
-                  <p>
-                     <label for="nomville">Ville: </label>
-                     <input type="text" name="nomville" id="nomville" required/>
-                  </p>
+					<form method="post" action="">
+					  <h3>Votez pour votre équipe favorite</h3>
+					  <p>
+						 <label for="nomville">Ville: </label>
+						 <input type="text" name="nomville" id="nomville" required/>
+					  </p>
 
-                  <p>
-                     <label for="equipe">Equipe : </label>
-                     <input type="text" name="equipe" id="equipe" required/>
-                  </p>
+					  <p>
+						 <label for="equipe">Equipe : </label>
+						 <input type="text" name="equipe" id="equipe" required/>
+					  </p>
 
-                  <a href="#"><input type="submit" value="Votez" id="monvote"/></a>
-
-                </form>
+					  <a href="#"><input type="submit" value="Votez" id="monvote"/></a>
+					  
+					</form>
               </div> <!-- fin fieldcontain -->
-              
-
-         
      
-  </div> <!-- /content -->  
+		</div> <!-- /content -->  
 </div>
 
-<div data-role="page" id="apropos" data-position="fixed">
+<div data-role="page" id="apropos" > <!-- /apropos -->
 
-	<div data-role="header" data-theme="a" data-position="fixed">
-		<span class="ui-app-title"></span>
-		<h1><img src= "img/icon-48.png">A Propos</h1>		
-	</div><!-- /header -->
+		<div data-role="header" data-theme="a">
+			<span class="ui-app-title"></span>
+			<h1><img src= "img/icon-48.png"/>A Propos</h1>		
+		</div><!-- /header -->
    
-	<div data-role="content"  data-theme="a" data-position="fixed">
-		<div data-role="fieldcontain">
-             <p> 
+		<div data-role="content"  data-theme="a">
+			<div data-role="fieldcontain">
+				<p> 
 				NawetaanLive v 1.0 </br></br>
 				Vive le foot local au Sénégal</br></br>
 				Résultats en live des Nawetaans de Thiès et Dakar</br></br>
-			    <a href="http://nawetaanlive.com" >http://nawetaanlive.com</a></br></br>
+				<a href="http://nawetaanlive.com" >http://nawetaanlive.com</a></br></br>
 				<a href="http://facebook.com/nawetaanlive" >http://facebook.com/nawetaanlive</a></br></br>
 				Copyright SenMobile 2011-2015</br></br>
 				<img src= "img/senmobile.png">
-             </p>
-		 </div>
-    </div>
+				</p>
+			 </div>
+		</div>
 </div>			
 
 </body>
