@@ -90,7 +90,7 @@
 
         :required{ background-color: red};
 		
-		#equipe h1{height: 60px;}
+		#equipefavorite h1{height: 100px;  padding-bottom: 50pt;}
 		#apropos h1{height: 60px;}
 		
     </style>
@@ -135,7 +135,7 @@
 					</br>
 					<a href="#joueur"  id="sms"><h3><span>j</span>oueur favori<h3></a>
 					</br>
-					<a href="#equipe"  id="sms"><h3><span>é</span>quipe favorite<h3></a>
+					<a href="#equipefavorite"  id="sms"><h3><span>é</span>quipe favorite<h3></a>
 					</br>
 					<a href="#apropos"  id="apropos"><h3><span>a</span> propos<h3></a>
 				</fieldset>
@@ -214,15 +214,15 @@
 		 </div>
  </div>
  
- <div data-role="page" id="equipe" > <!-- /page equipe favorite -->
+ <div data-role="page" id="equipefavorite"> <!-- /page equipe favorite -->
 
-		<div data-role="header" data-theme="a">
+		<div data-role="header" data-theme="a"  class="equipe">
 			<span class="ui-app-title"></span>
 			<h1><img src= "img/icon-48.png"/>Equipe favorite</h1>
 		</div><!-- /header -->    
 	  
-		<div data-role="content" id="vote" data-theme="a">  
-              <div data-role="fieldcontain">
+		<div data-role="content" data-theme="a">  
+              <div data-role="fieldcontain" padding-bottom="50pt">
 					<form method="post" action="">
 					  <h3>Votez pour votre équipe favorite</h3>
 					  <p>
@@ -243,7 +243,7 @@
 		</div> <!-- /content -->  
 </div>
 
-<div data-role="page" id="apropos" > <!-- /apropos -->
+<div data-role="page" id="apropos"> <!-- /apropos -->
 
 		<div data-role="header" data-theme="a">
 			<span class="ui-app-title"></span>
