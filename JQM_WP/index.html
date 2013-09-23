@@ -188,27 +188,31 @@
 			  
 
 			  <div data-role="fieldcontain">
-				<form method="post" action="">
+				<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvotejoueurwp.php">
 					<h3>Votez pour votre joueur favori</h3>
-					  <p>
+					<p>
+						 <label for="telephone">T&#233;l&#233;phone : (Orange seulement)</label>
+						 <input type="number" name="telephone" id="telephone"/>
+					</p>
+					<p>
 						<label for="ville">Ville : </label>
 						<select name="ville" id="ville">
 						  <option value="pikine">Pikine</option>
-						  <option value="thies">Thi&#233;s</option>
+						  <option value="thies">Thi&#232;s</option>
 						</select>
-					  </p>
+					</p>
 
-					  <p>
+					<p>
 						 <label for="prenom">Pr&#233;nom : </label>
-						 <input type="text" name="prenom" id="prenom" required/>
-					  </p>
+						 <input type="text" name="prenom" id="prenom"/>
+					</p>
 
-					  <p>
+					<p>
 						 <label for="nom">Nom : </label>
-						 <input type="text" name="nom" id="nom" required/>
-					  </p>
+						 <input type="text" name="nom" id="nom"/>
+					</p>
 
-					<a href="sms:24222?body=test"><input type="submit" value="Votez" id="monvote"/></a>
+					<input type="submit" value="Votez"/>
 
 				</form>
 			  </div> <!-- fin fieldcontain -->
@@ -224,19 +228,26 @@
 	  
 		<div data-role="content" data-theme="a">  
               <div data-role="fieldcontain" padding-bottom="50pt">
-					<form method="post" action="">
+					<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvoteequipewp.php">
 					  <h3>Votez pour votre &#233;quipe favorite</h3>
-					  <p>
-						 <label for="nomville">Ville: </label>
-						 <input type="text" name="nomville" id="nomville" required/>
-					  </p>
+					<p>
+						 <label for="telephone">T&#233;l&#233;phone : (Orange seulement)</label>
+						 <input type="number" name="telephone" id="telephone"/>
+					</p>
+					<p>
+						<label for="ville">Ville : </label>
+						<select name="ville" id="ville">
+						  <option value="pikine">Pikine</option>
+						  <option value="thies">Thi&#232;s</option>
+						</select>
+					</p>
 
 					  <p>
 						 <label for="equipe">Equipe : </label>
 						 <input type="text" name="equipe" id="equipe" required/>
 					  </p>
 
-					  <a href="sms:24222?body=test"><input type="submit" value="Votez" id="monvote"/></a>
+					  <input type="submit" value="Votez"/>
 					  
 					</form>
               </div> <!-- fin fieldcontain -->
