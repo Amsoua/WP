@@ -96,10 +96,31 @@
        
 
 <script type="text/javascript"> 
-             function showSMSPrice(){
-			navigator.notification.alert('SMS premium',alertDismissed(), 'Alerte', 'OK');
-              }
-			 
+
+            document.addEventListener("deviceready", onDeviceReady, false);
+			
+            function onDeviceReady() {
+				checkConnection();
+			}
+
+			function checkConnection() {
+				var networkState = navigator.connection.type;
+
+				var states = {};
+				states[Connection.UNKNOWN]  = 'Unknown connection';
+				states[Connection.ETHERNET] = 'Ethernet connection';
+				states[Connection.WIFI]     = 'WiFi connection';
+				states[Connection.CELL_2G]  = 'Cell 2G connection';
+				states[Connection.CELL_3G]  = 'Cell 3G connection';
+				states[Connection.CELL_4G]  = 'Cell 4G connection';
+				states[Connection.NONE]     = 'No network connection';
+
+				 if (networkState == Connection.UNKNOWN || networkState == Connection.NONE)
+				{
+					alert('Internet est requis pour utiliser pleinement cette application');
+     		//navigator.app.exitApp();
+				}
+			}
 			 $(document).ready(function () {
       
   			$('#rssfeedthies').rssfeed('http://nawetaanlive.com/scripts2012/sms/delegue/fluxrssthies2013.xml', {
@@ -133,9 +154,9 @@
 		   <div class="content-primary" >
 				<fieldset data-role="fieldcontain">
 				<ul data-role="listview" data-inset="true" data-filter="false" >
-					<li><a href="#dakar" id="dakar"><h3>scores de dakar</h3></a></li>
+					<li><a href="#dakar" id="dakar" onclick="checkConnection()"><h3>scores de dakar</h3></a></li>
 					</br>
-					<li><a href="#thies" id="Thies"><h3>scores de thi&#232;s</h3></a></li>
+					<li><a href="#thies" id="Thies" onclick="checkConnection()"><h3>scores de thi&#232;s</h3></a></li>
 					</br>
 					<li><a href="#joueur" id="sms"><h3>vote joueur favori</h3></a></li>
 					</br>
