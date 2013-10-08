@@ -183,9 +183,9 @@
 		
 		<!-- affichage des flux RSS de Thies -->
 		<div data-role="content" id="rssfeedthies">
-			<div data-role="fieldcontain">
-				<ul><li class = "rssBody"></li></ul>
-			</div>
+			
+				<div class = "rssBody"></div>
+			
 		</div> 	
 	</div>
 
@@ -202,9 +202,8 @@
 		
 		<!-- affichage des flux RSS de Dakar -->
 		<div data-role="content" id="rssfeeddakar">
-			<div data-role="fieldcontain">
-				<ul><li class = "rssBody"></li></ul>
-			</div> <!-- /content -->
+			
+				<div class = "rssBody"></div>
 		</div> 		
 	</div>
 
@@ -220,36 +219,35 @@
 		</div>
    
 		  <div data-role="content">
-			  
+			  <h3>Votez pour votre joueur favori</h3>
 
 			  <div data-role="fieldcontain">
-				<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvotejoueurwp.php" onsubmit="this.reset();>
-					<h3>Votez pour votre joueur favori</h3>
-					<p>
+				<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvotejoueurwp.php" onsubmit="this.reset();">
+					
+					<div data-role="fieldcontain">
 						 <label for="telephone">T&#233;l&#233;phone : (Orange seulement)</label>
 						 <input type="number" name="telephone" id="telephone"/>
-					</p>
+					</div>
 					<!-- champ pour le choix de la ville du joueur favori -->
-					  	<p>
-							<label for="ville">Ville : </label></br>
-							<select name="ville" id="ville">
+						<div data-role="fieldcontain">
+							<label for="villej">Ville : </label>
+							<select name="villej" id="villej">
 							  <option value="pikine">Pikine</option>
 							  <option value="thies">Thi&#232;s</option>
 							</select>
-					  	</p>
-
-					<!-- champ pour la saisie du prenom du joueur favori -->
-					  	<p>
-							 <label for="prenom">Pr&#233;nom : </label></br>
-							 <input type="text" name="prenom" id="prenom" />
-					  	</p>
-
-					<!-- champ pour la saisie du nom du joueur favori -->
-					  	<p>
-							 <label for="nom">Nom : </label></br>
-							 <input type="text" name="nom" id="nom"/>
-					  	</p>
-
+					  	</div>
+						
+					  	<!-- champ pour la saisie du prenom du joueur favori -->
+						<div data-role="fieldcontain">
+							 <label for="prenomj">Pr&#233;nom : </label>
+							 <input type="text" name="prenom" id="prenom" data-clear-btn="true"/>
+						</div>
+						
+					  	<!-- champ pour la saisie du nom du joueur favori -->
+						<div data-role="fieldcontain">
+							 <label for="nomj">Nom : </label>
+							 <input type="text" name="nom" id="nom" data-clear-btn="true"/>
+						</div>
 					<input type="submit" value="Votez"/>
 
 				</form>
@@ -267,28 +265,30 @@
 		</div>     
 	 
 		<div data-role="content" >  
-              <div data-role="fieldcontain" padding-bottom="50pt">
-					<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvoteequipewp.php" onsubmit="this.reset();>
-					  <h3>Votez pour votre &#233;quipe favorite</h3>
-						<p>
+		     <h3>Votez pour votre &#233;quipe favorite</h3>
+             
+					<form method="post" action="http://nawetaanlive.com/apps/nawetaanlive2013/wp/scripts/traitementvoteequipewp.php" onsubmit="this.reset()";>
+					<fieldset>
+					  
+						<div data-role="fieldcontain">
 							 <label for="telephone">T&#233;l&#233;phone : (Orange seulement)</label>
 							 <input type="number" name="telephone" id="telephone"/>
-						</p>
+						</div>
 					<!-- champ pour le choix de la ville de l'equipe favorite -->
-					  	<p>
-						 <label for="ville">Ville : </label></br>
-							<select name="ville" id="ville">
+					  	<div data-role="fieldcontain">
+						 <label for="villee">Ville : </label>
+							<select name="villee" id="villee">
 							  <option value="pikine">Pikine</option>
 							  <option value="thies">Thi&#232;s</option>
 							</select>
-					    </p>
+					    </div>
 
 					    <!-- champ pour la saisie du nom de l'equipe favorite -->
-					  	<p>
-							 <label for="equipe">Equipe : </label></br>
-							 <input type="text" name="equipe" id="equipe" />
-					    </p>
-						<input type="submit" value="Votez"/>
+						<div data-role="fieldcontain">
+							 <label for="equipee">Equipe : </label>
+							 <input type="text" name="equipe" id="equipe" data-clear-btn="true"/>
+					    </div>
+					</fieldset>
 					  
 					</form>
               </div> <!-- fin fieldcontain -->
@@ -308,21 +308,24 @@
 		</div><!-- /header -->
    
    		<!-- affichage du contenu A Propos -->
-		<div data-role="content">
-			<div data-role="fieldcontain">
-				<p> 
-					NawetaanLive v 1.0 </br></br>
-					Vive le foot local au S&#233;n&#233;gal</br></br>
-					R&#233;sultats en live des Nawetaans de Thi&#232;s et Dakar</br></br>
-					<a href="http://nawetaanlive.com">http://nawetaanlive.com</a></br></br>
-					<a href="http://facebook.com/nawetaanlive" >http://facebook.com/nawetaanlive</a></br></br>
-					Copyright SenMobile 2011-2015</br></br>
-
-					<p align="center">
-						<img src= "img/senmobile.png" align="center"/>
-					</p>
-				</p>
-			 </div>
+				<div>
+					Vive le foot local au S&#233;n&#233;gal  <br> <br>
+					</div>
+					<div>
+					R&#233;sultats en live des Nawetaans de Thi&#232;s et Dakar <br> <br>
+					</div>
+					<div>
+					<a href="http://nawetaanlive.com">http://nawetaanlive.com</a> <br> <br>
+					</div>
+					<div>
+					<a href="http://facebook.com/nawetaanlive" >http://facebook.com/nawetaanlive</a> <br> <br>
+					</div>
+					<div>
+					Copyright SenMobile 2011-2015 <br> <br>
+					</div>
+					<div>
+						<img src= "img/senmobile.png"/>
+					</div>
 		</div>
 	</div>		
 </body>
